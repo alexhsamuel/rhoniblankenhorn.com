@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <title>rhoniblankenhorn.com</title>
+<body bgcolor="white">
+<img id="banner" src="banner.png" style="opacity:0;position:absolute;left:16px;top:120px"></img>
+<div id="email" style="opacity:0;position:absolute;left:16px;top:230px"><a href="mailto:rhoni@rhoniblankenhorn.com" style="text-decoration:none;ccclaksdjflka;color:#888">rhoni@rhoniblankenhorn.com</a></div>
+<script>
+var banner = document.getElementById("banner");
+var email = document.getElementById("email");
+var alpha = -0.5;
+var interval = setInterval(function() {
+  banner.style.opacity = (alpha += 0.01);
+  email.style.opacity = alpha - 1;
+  if (alpha >= 2)
+    clearInterval(interval);
+  }, 20);
+</script>
+</body>
+</html>
